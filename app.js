@@ -4,6 +4,7 @@
 const express = require('express')
 const bodyParser = require('body-parser')
 const hbs = require('express-handlebars')
+const path = require('path')
 //Assets
 const api = require('./routes')
 const app = express()
@@ -21,5 +22,8 @@ app.set('view engine', '.hbs')
 
 //ruteo
 app.use('/', api)
+//Ficheros staticos
+app.use(express.static(path.join(__dirname, 'public')))
+
 
 module.exports = app
