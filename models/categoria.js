@@ -4,9 +4,9 @@
 const sequelize = require('./database')
 
 module.exports = (sequelize, DataTypes) => {
-  return sequelize.define('Categories',{
-    idcategorias_tareas: { type: DataTyes.INTEGER, primaryKey: true, allowNull: false },
-    title: DataTypes.STRING,
+  return sequelize.define('categorias',{
+    idcategorias_tareas: { type: DataTypes.INTEGER, primaryKey: true, allowNull: false },
+    titulo: DataTypes.STRING,
     color: DataTypes.STRING
   },
   {

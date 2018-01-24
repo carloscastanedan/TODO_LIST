@@ -1,0 +1,49 @@
+<div class="row">
+  <div class="col s12 l8 offset-l2">
+    <div class="card horizontal">
+      <div class="card-image hide-on-med-and-down valign-wrapper col s12 offset-l1">
+        <img class="responsive-img" src="images/home.jpg" alt="image_home">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <h4>Registrarse</h4>
+          <br>
+          <br>
+          <form method="POST" action="/signUp">
+            <div class="row">
+              <div class="input-field col s8 offset-s1">
+                <input id="nombre" type="text" class="validate" name="nombre" required>
+                <label for="usuario">Nombre</label>
+              </div>
+              <div class="input-field col s8 offset-s1">
+                <input id="apellido" type="text" class="validate" name="apellido">
+                <label for="usuario">Apellido</label>
+              </div>
+              <div class="input-field col s8 offset-s1">
+                <input id="email" type="email" class="validate" name="email" required>
+                <label for="usuario">Correo electrónico</label>
+              </div>
+              <div class="input-field col s8 offset-s1">
+                <input id="nickname" type="text" class="validate" name="nickname">
+                <label for="usuario">Nickname</label>
+              </div>
+              <div class="input-field col s8 offset-s1">
+                <input id="password1" type="password" class="validate" required>
+                <label for="password1">Contraseña</label>
+              </div>
+              <div class="input-field col s8 offset-s1">
+                <input id="password2" type="password" class="validate" name="password" required>
+                <label for="password2">Confirmar Contraseña</label>
+              </div>
+            </div>
+            <br>
+            <div class="right-align">
+              <button class="btn" type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/formSignUp.js"></script>

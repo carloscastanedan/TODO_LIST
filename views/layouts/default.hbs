@@ -4,22 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
   <title>TODO_LIST</title>
 </head>
 <body>
   <header>
-    <div class="row blue darken-4">
-      <div class="col s12">
-        <h1 class="white-text">Todo_List</h1>
+    <nav>
+      <div class="nav-wrapper blue darken-4 offset-l1">
+        <a href="#" class="brand-logo"><i class="material-icons">description</i>TODO LIST</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Registrate</a></li>
+        </ul>
       </div>
-    </div>
+    </nav>
   </header>
-  {{{body}}}
+  <main class="valign-wrapper">
+    {{{body}}}
+  </main>
   <footer class="page-footer blue darken-4 valign-wrapper">
     <div class="container">
-      <h5>Footer</h5>
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Todo List</h5>
+          <p class="grey-text text-lighten-4">
+           Todo List es un aplicacion que te permite tener un control, registro y
+           Seguimiento de tus actividades, esto te ayuda a aimentar tu productividad
+           y consueguir tus metas.
+
+           ¿Y TU QUIERES ALCANZAR TU OBJETIVOS? ...
+          </p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Redes Sociales</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!"><i class="material-icons">language</i>  LINKEDIN</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!"><i class="material-icons">language</i>  GITHUB</a></li>
+            </ul>
+        </div>
+      </div>
     </div>
   </footer>
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
